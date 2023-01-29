@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.IO;
 
 public class FetchVideo : MonoBehaviour
 {
@@ -11,11 +13,12 @@ public class FetchVideo : MonoBehaviour
         ftpClient = new FTPClient();
         ftpClient.downloadFile("ARVideo.mp4");
 
-        GameObject camera = GameObject.Find("Main Camera");
-        var videoPlayer = camera.AddComponent<UnityEngine.Video.VideoPlayer>();
-        videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;
-        videoPlayer.targetCameraAlpha = 0.5F;
-        videoPlayer.url = "ARVideo.mp4";
+        GameObject quad = gameObject;
+        Debug.Log("Inside Start");
+        var videoPlayer = quad.AddComponent<UnityEngine.Video.VideoPlayer>();
+        /*videoPlayer.transform.eulerAngles = new Vector3(0, 0, 90);*/
+        /*videoPlayer.renderMode = UnityEngine.Video.VideoRenderMode.CameraNearPlane;*/
+        videoPlayer.url = Path.Combine(Application.persistentDataPath, "ARVideo.mp4");
         videoPlayer.isLooping = true;
         videoPlayer.Play();
     }

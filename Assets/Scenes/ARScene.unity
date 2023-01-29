@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_SerializedLibrary: {fileID: 11400000, guid: 4658afb65f7f3d448a9588a901d37380,
     type: 2}
   m_MaxNumberOfMovingImages: 1
-  m_TrackedImagePrefab: {fileID: 5753984291314693949, guid: 9f5ccd942d902344ca6de248d38d746c,
+  m_TrackedImagePrefab: {fileID: 6490821758815984643, guid: 9f5ccd942d902344ca6de248d38d746c,
     type: 3}
 --- !u!114 &263590501
 MonoBehaviour:
@@ -273,7 +273,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 263590499}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 591.292, y: 234.79597, z: 53.686302}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

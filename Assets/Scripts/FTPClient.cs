@@ -89,11 +89,12 @@ public class FTPClient : MonoBehaviour
     {
 		WebClient request = new WebClient();
 		request.Credentials = new NetworkCredential(ftpUser, ftpPassword);
-		byte[] fileData = request.DownloadData(address);
-		if (fileData != null)
+		/*byte[] fileData = request.DownloadData(address);*/
+		request.DownloadFile(address, Path.Combine(Application.persistentDataPath, "ARVideo.mp4") );
+		/*if (fileData != null)
 		{
 			WriteByteArrayToFile(filename, fileData);
-		}
+		}*/
 	}
 
 	public void WriteByteArrayToFile(string fileName, byte[] data)

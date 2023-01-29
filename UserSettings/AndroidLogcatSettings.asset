@@ -1,9 +1,9 @@
 {
     "m_SelectedDeviceId": "e862d9b8",
     "m_SelectedPackage": {
-        "deviceId": "e862d9b8",
-        "name": "com.naushaddhun.com.ARVideoViewer",
-        "processId": 4683,
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -11,37 +11,31 @@
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 10449,
+            "processId": 29655,
             "exited": true
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 15170,
+            "processId": 30300,
             "exited": true
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 32249,
+            "processId": 4922,
             "exited": true
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 3604,
+            "processId": 7754,
             "exited": true
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 4211,
-            "exited": false
-        },
-        {
-            "deviceId": "e862d9b8",
-            "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 4683,
+            "processId": 13142,
             "exited": false
         }
     ],
