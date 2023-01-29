@@ -8,10 +8,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CameraScene.unity
     guid: 355dc0cd7acccb54a83dae3c7fb4c514
+  - enabled: 1
+    path: Assets/Scenes/ARScene.unity
+    guid: f631c8e1edc9cb9448c66c18eb73a295
   m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 7f7a6c7ffb617f144a11c6bde85f57b3,
+      type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 41726c617db2ff444aa3eb346dcb8382,
       type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
       guid: dd1ab886c57f1d3448d49250bbf43298, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
       guid: e0a8f09f72a35b64da4f36ed7c41c88e, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 3ec4e1e43db8e424a9f6befc07dd7e25,
+      type: 2}

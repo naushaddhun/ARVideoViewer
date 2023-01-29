@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class UploadFromGallery : MonoBehaviour
 {
+	public GameObject sliderPrefab;
 	private FTPClient ftpClient;
 
 	public void PickImageOrVideo()
 	{
-		ftpClient = new FTPClient();
+		ftpClient = new FTPClient(sliderPrefab);
 		if (NativeGallery.CanSelectMultipleMediaTypesFromGallery())
 		{
 			NativeGallery.Permission permission = NativeGallery.GetMixedMediaFromGallery((path) =>

@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class CaptureVideo : MonoBehaviour
 {
+    public GameObject sliderPrefab;
     private FTPClient ftpClient;
 
     public void RecordVideo()
     {
-        ftpClient = new FTPClient();
+        ftpClient = new FTPClient(sliderPrefab);
         NativeCamera.Permission permission = NativeCamera.RecordVideo((path) =>
         {
             //textUIValue.text = "Video path: " + path;

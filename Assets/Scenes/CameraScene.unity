@@ -753,6 +753,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8cdc1598950dec46b24908f4fcf8cb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sliderPrefab: {fileID: 4998558447259574353, guid: 2a64024b87862ec4a9cd694233003dd2,
+    type: 3}
 --- !u!1 &1988578981
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,6 +902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf0e7acfa80b2f9498fa9561d21006a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sliderPrefab: {fileID: 4998558447259574353, guid: 2a64024b87862ec4a9cd694233003dd2,
+    type: 3}
 --- !u!1 &2052318942
 GameObject:
   m_ObjectHideFlags: 0
