@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "e862d9b8",
         "name": "com.naushaddhun.com.ARVideoViewer",
-        "processId": 17127,
+        "processId": 18495,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -42,6 +42,12 @@
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
             "processId": 17127,
+            "exited": false
+        },
+        {
+            "deviceId": "e862d9b8",
+            "name": "com.naushaddhun.com.ARVideoViewer",
+            "processId": 18495,
             "exited": false
         }
     ],

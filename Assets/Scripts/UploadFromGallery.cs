@@ -4,20 +4,11 @@ using UnityEngine;
 
 public class UploadFromGallery : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private FTPClient ftpClient;
 
 	public void PickImageOrVideo()
 	{
+		ftpClient = new FTPClient();
 		if (NativeGallery.CanSelectMultipleMediaTypesFromGallery())
 		{
 			NativeGallery.Permission permission = NativeGallery.GetMixedMediaFromGallery((path) =>
@@ -32,6 +23,7 @@ public class UploadFromGallery : MonoBehaviour
 						case NativeGallery.MediaType.Video: Debug.Log("Picked video"); break;
 						default: Debug.Log("Probably picked something else"); break;
 					}
+					ftpClient.uploadFile("ARVideo.mp4", path);
 				}
 			}, NativeGallery.MediaType.Image | NativeGallery.MediaType.Video, "Select an image or video");
 

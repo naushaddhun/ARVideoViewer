@@ -17,7 +17,7 @@ public class FTPClient : MonoBehaviour
     public void uploadFile(string filename, string filePath)
     {
         FileInfo file = new FileInfo(filePath);
-        Uri address = new Uri("ftp://" + server + "/" + Path.Combine(initialPath, file.Name));
+        Uri address = new Uri("ftp://" + server + "/" + Path.Combine(initialPath, "ARVideo.mp4"));
         var request = FtpWebRequest.Create(address) as FtpWebRequest;
 
 

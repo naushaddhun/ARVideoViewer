@@ -25,6 +25,5 @@ public class CaptureVideo : MonoBehaviour
         }, NativeCamera.Quality.Default, 30);
 
         Debug.Log("Permission result: " + permission);
-        ftpClient.closeFtp();
     }
 }
