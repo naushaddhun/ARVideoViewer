@@ -15,24 +15,23 @@ public class FTPClient : MonoBehaviour
     private string server = "162.241.217.33";
     private string initialPath = "ARVideoViewer";
 	Uri address;
-	FtpWebRequest request;
 
 
 	public FTPClient(GameObject sliderObj = null)
     {
 		slider = sliderObj;		
-		address = new Uri("ftp://" + server + "/" + Path.Combine(initialPath, "ARVideo.mp4"));
-		request = FtpWebRequest.Create(address) as FtpWebRequest;
-		request.Credentials = new NetworkCredential(ftpUser, ftpPassword);
-
-		// Set control connection to closed after command execution
-		request.KeepAlive = false;
+		address = new Uri("ftp://" + server + "/" + Path.Combine(initialPath, "ARVideo.mp4"));		
 	}
 
 
     public void uploadFile(string filename, string filePath)
     {
 		FileInfo file = new FileInfo(filePath);
+		FtpWebRequest request = FtpWebRequest.Create(address) as FtpWebRequest;
+		request.Credentials = new NetworkCredential(ftpUser, ftpPassword);
+
+		// Set control connection to closed after command execution
+		request.KeepAlive = false;
 		// Specify command to be executed
 		request.Method = WebRequestMethods.Ftp.UploadFile;
 
@@ -63,11 +62,11 @@ public class FTPClient : MonoBehaviour
 			// Loop until stream content ends.
 			while (contentLength != 0)
 			{
-				Debug.Log("Progress: " + ((fs.Position / fs.Length) * 100f));
+				Debug.Log("Progress: " + ((float)((float)fs.Position / (float)fs.Length) * 100f));
 				// Write content from file stream to FTP upload stream.
 				stream.Write(buffer, 0, contentLength);
 				contentLength = fs.Read(buffer, 0, bufferLength);
-				sliderPrefab.value = ((fs.Position / fs.Length) * 100f);
+				sliderPrefab.value = ((float)((float)fs.Position / (float)fs.Length) * 100f);
 				Debug.Log("slider value " + sliderPrefab.value);
 			}
 
@@ -89,12 +88,7 @@ public class FTPClient : MonoBehaviour
     {
 		WebClient request = new WebClient();
 		request.Credentials = new NetworkCredential(ftpUser, ftpPassword);
-		/*byte[] fileData = request.DownloadData(address);*/
 		request.DownloadFile(address, Path.Combine(Application.persistentDataPath, "ARVideo.mp4") );
-		/*if (fileData != null)
-		{
-			WriteByteArrayToFile(filename, fileData);
-		}*/
 	}
 
 	public void WriteByteArrayToFile(string fileName, byte[] data)

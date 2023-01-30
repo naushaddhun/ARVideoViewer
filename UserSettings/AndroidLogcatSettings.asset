@@ -11,31 +11,37 @@
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 29655,
+            "processId": 20061,
             "exited": true
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 30300,
+            "processId": 26184,
             "exited": true
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 4922,
+            "processId": 29078,
             "exited": true
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 7754,
+            "processId": 3430,
             "exited": true
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 13142,
+            "processId": 18488,
+            "exited": false
+        },
+        {
+            "deviceId": "e862d9b8",
+            "name": "com.naushaddhun.ARVideoViewer",
+            "processId": 27177,
             "exited": false
         }
     ],

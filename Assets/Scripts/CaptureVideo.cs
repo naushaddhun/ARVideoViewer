@@ -12,7 +12,6 @@ public class CaptureVideo : MonoBehaviour
         ftpClient = new FTPClient(sliderPrefab);
         NativeCamera.Permission permission = NativeCamera.RecordVideo((path) =>
         {
-            //textUIValue.text = "Video path: " + path;
             Debug.Log("Video path: " + path);
 
             Debug.Log("Video path: " + path);
