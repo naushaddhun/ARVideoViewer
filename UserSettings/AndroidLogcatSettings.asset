@@ -10,38 +10,32 @@
     "m_KnownPackagesForSerialization": [
         {
             "deviceId": "e862d9b8",
-            "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 20061,
+            "name": "com.naushaddhun.ARVideoViewer",
+            "processId": 12729,
             "exited": true
-        },
-        {
-            "deviceId": "e862d9b8",
-            "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 26184,
-            "exited": true
-        },
-        {
-            "deviceId": "e862d9b8",
-            "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 29078,
-            "exited": true
-        },
-        {
-            "deviceId": "e862d9b8",
-            "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 3430,
-            "exited": true
-        },
-        {
-            "deviceId": "e862d9b8",
-            "name": "com.naushaddhun.com.ARVideoViewer",
-            "processId": 18488,
-            "exited": false
         },
         {
             "deviceId": "e862d9b8",
             "name": "com.naushaddhun.ARVideoViewer",
-            "processId": 27177,
+            "processId": 16458,
+            "exited": true
+        },
+        {
+            "deviceId": "e862d9b8",
+            "name": "com.naushaddhun.ARVideoViewer",
+            "processId": 25833,
+            "exited": true
+        },
+        {
+            "deviceId": "e862d9b8",
+            "name": "com.naushaddhun.ARVideoViewer",
+            "processId": 27305,
+            "exited": true
+        },
+        {
+            "deviceId": "e862d9b8",
+            "name": "com.naushaddhun.ARVideoViewer",
+            "processId": 2807,
             "exited": false
         }
     ],
